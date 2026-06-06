@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: be-todo
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://neondb_owner:npg_c1uFfLl2VyiQ@ep-divine-dream-apmv65sg-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require
+      - key: PORT
+        value: 5000
+
+  - type: web
+    name: fe-todo
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://be-todo.onrender.com
