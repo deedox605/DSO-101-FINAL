@@ -1,0 +1,18 @@
+name: Auto Deploy to Render
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Backend to Render
+        run: |
+          curl "https://api.render.com/deploy/srv-d8i0mn647okc738utv0g?key=EE5gig4h53k"
+
+      - name: Deploy Frontend to Render
+        run: |
+          curl "https://api.render.com/deploy/srv-d8i0njtckfvc73b9ut60?key=J5XBedwDgoE"
