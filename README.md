@@ -66,16 +66,16 @@ https://github.com/deedox605/DSO-101-FINAL.git
 ## Screenshots
 
 GitHub Repository
-![repo.png](backend/repo.png)
+![repo](repo.png)
 
 GitHub Actions Workflow
-![action.png](backend/action.png)
+![action](action.png)
 
 Render Deployment
-![deploy.png](backend/deploy.png)
+![deploy](deploy.png)
 
 Live Website
-![website.png](backend/website.png)
+![website](website.png)
 
 # Conclusion
 Successfully completed both Assignment 1 (Docker deployment) and Assignment 3 (CI/CD automation). The todo app is fully functional and every code change automatically triggers a complete CI/CD pipeline, demonstrating professional DevOps practices.
